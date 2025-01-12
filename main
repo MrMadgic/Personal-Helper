@@ -1,0 +1,147 @@
+from statistics import linear_regression
+#.exe file below
+#Terminal:pyinstaller --onefile name_file.py
+import pyautogui as pi
+"""
+#pi.sleep(1)
+#print(pi.position())
+#перемещаемся на Пуск
+pi.moveTo(734, 1054)
+pi.leftClick()
+pi.typewrite('psql')
+pi.press('enter')
+pi.sleep(1.5)
+pi.hotkey('Win', 'Up')
+pi.press('enter')
+pi.press('enter')
+pi.press('enter')
+pi.press('enter')
+pi.typewrite('123454321')
+pi.press('enter')
+pi.typewrite('psql \\! chcp 1251')
+pi.press('enter')
+pi.typewrite('\\c database1')
+pi.press('enter')
+pi.typewrite('\\d')
+pi.press('enter')
+pi.typewrite('select * from passwords where id_passwords = 0;')
+pi.typewrite('select * from passwords where id_passwords = 0;')
+pi.press('enter')
+pi.moveTo(420,694)
+pi.click()
+pi.dragTo(227,699, 3, button='left')
+pi.rightClick()"""
+def pochta():
+    # перемещаемся на Пуск
+    pi.moveTo(734, 1054)
+    pi.leftClick()
+    pi.sleep(0.5)
+    pi.typewrite('psql')
+    pi.press('enter')
+    pi.sleep(1.5)
+    pi.hotkey('Win', 'Up')
+    pi.press('enter')
+    pi.press('enter')
+    pi.press('enter')
+    pi.press('enter')
+    pi.typewrite('123454321')
+    pi.press('enter')
+    pi.typewrite('psql \\! chcp 1251')
+    pi.press('enter')
+    pi.typewrite('\\c database1')
+    pi.press('enter')
+    pi.typewrite('\\d')
+    pi.press('enter')
+    pi.typewrite('select * from passwords where id_passwords = 0;')
+    pi.typewrite('select * from passwords where id_passwords = 0;')
+    pi.press('enter')
+    pi.typewrite(
+        '    #     #  #######  #         ######   #######  #     #  #######    #     #  ######        #######  #        #######   #####')
+    pi.press('enter')
+    pi.typewrite(
+        '    #  #  #  #        #        #      #  #     #  ##   ##  #          ##   ##  #     #       #     #  #        #        #')
+    pi.press('enter')
+    pi.typewrite(
+        '    #  #  #  #        #        #         #     #  # # # #  #          # # # #  #     #       #     #  #        #        #')
+    pi.press('enter')
+    pi.typewrite(
+        '    #  #  #  #####    #        #         #     #  #  #  #  #####      #  #  #  ######        #     #  #        #####    #######')
+    pi.press('enter')
+    pi.typewrite(
+        '    #  #  #  #        #        #         #     #  #     #  #          #     #  #   #         #     #  #        #        #     #')
+    pi.press('enter')
+    pi.typewrite(
+        '    #  #  #  #        #        #      #  #     #  #     #  #          #     #  #    #   ###  #     #  #        #        #     #')
+    pi.press('enter')
+    pi.typewrite(
+        '     ## ##   #######  #######   ######   #######  #     #  #######    #     #  #     #  ###  #######  #######  #######   #####')
+    pi.press('enter')
+    pi.press('enter')
+    pi.typewrite('Entering to Yandex browser...')
+    #Заходим в Яндекс и далее на почту
+    try:
+        pi.doubleClick(pi.locateCenterOnScreen('C:/Users/User/PycharmProjects/WelcomePR/images/Yandex_img_2.png'))
+    except:
+        pi.leftClick(1917, 1056)
+        pi.doubleClick(189, 930)
+    pi.sleep(0.5)                   #It might be increases to 1.0 sec
+    pi.hotkey('Win', 'Up')
+    pi.typewrite('https://mail.tatar.ru')
+    pi.press('enter')
+    pi.sleep(1)
+    pi.typewrite('mXLMXRgjszr8679%@')
+    pi.press('enter')
+
+
+
+def begin():
+    if pi.confirm(text='Sir,\nAre you ready?', title='Mr. Oleg, you are welcome!', buttons=['Начнём', 'Ещё не время'])=='Начнём':
+        a = pi.confirm(text='Mr. Oleg, welcome home!\nI\'m Friday,\nHow can I help you?',buttons=['Почта', 'Anaconda', 'Учёба','Почта', 'Сервис', 'Учёба', 'Почта', 'Сервис', 'Учёба','Почта', 'Сервис', 'Учёба', 'Почта', 'Сервис', 'Учёба','Почта', 'Сервис', 'Учёба'])
+        if a == 'Почта':
+            pochta()
+        elif a == 'Учёба':          #Определяем положение курсора
+            pi.sleep(2)
+            print(pi.position())
+        elif a == 'Anaconda':           #Anaconda
+            pi.moveTo(734, 1054)
+            pi.leftClick()
+            pi.sleep(0.5)
+            pi.typewrite('Anaconda prompt')
+            pi.press('enter')
+            pi.sleep(3.5)
+            pi.typewrite('jupyter notebook')
+            pi.press('enter')
+    else: pi.confirm(text='Mr. Oleg, good bye!\nI\'m Friday,\nSee you later',buttons=['Пока'])
+
+def main():
+    begin()
+
+if __name__ == "__main__":
+    main()
+
+
+"""
+pi.typewrite('    #     #  #######  #         ######   #######  #     #  #######    #     #  ######        #######  #        #######   #####')
+pi.press('enter')
+pi.typewrite('    #  #  #  #        #        #      #  #     #  ##   ##  #          ##   ##  #     #       #     #  #        #        #')
+pi.press('enter')
+pi.typewrite('    #  #  #  #        #        #         #     #  # # # #  #          # # # #  #     #       #     #  #        #        #')
+pi.press('enter')
+pi.typewrite('    #  #  #  #####    #        #         #     #  #  #  #  #####      #  #  #  ######        #     #  #        #####    #######')
+pi.press('enter')
+pi.typewrite('    #  #  #  #        #        #         #     #  #     #  #          #     #  #   #         #     #  #        #        #     #')
+pi.press('enter')
+pi.typewrite('    #  #  #  #        #        #      #  #     #  #     #  #          #     #  #    #   ###  #     #  #        #        #     #')
+pi.press('enter')
+pi.typewrite('     ## ##   #######  #######   ######   #######  #     #  #######    #     #  #     #  ###  #######  #######  #######   #####')
+pi.press('enter')
+
+
+
+pi.sleep(2)
+pi.dragTo(227,694, 5, button='left', tween=linear)
+pi.rightClick()
+pi.sleep(2)
+print(pi.position())
+pi.sleep(2)
+print(pi.position())"""
